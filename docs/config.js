@@ -20,7 +20,7 @@
 */
 
 const config = {
-	name: 'Augury Docs',
+	name: 'Augury',
 	description: 'Code documentation for Augury',
 	latestVersion: 'Augury',
 	otherVersions: [],
