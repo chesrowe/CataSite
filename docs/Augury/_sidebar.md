@@ -2,10 +2,6 @@
 
 ---
 
--    [itemDropTable-Class](itemDropTable-Class)
-
----
-
 **Units**
 
 -    [Unit-Array](Unit-Array)
@@ -16,6 +12,8 @@
 **Items**
 
 -    [itemStack-Class](itemStack-Class)
+-    [itemDropTable-Class](itemDropTable-Class)
+-    [Item-System-Functions](Item-System-Functions)
 
 ---
 
