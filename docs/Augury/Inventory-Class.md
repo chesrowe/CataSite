@@ -2,7 +2,8 @@
 Inventories are data objects used for all instances where we need to store items together
 (Structure storage, pack oxen, unit inventories, and etc..)
 
-**Examples:** ```gml
+**Examples:**
+```gml
 toolInv = new inventory(4, ["itemTool"], false)
 storage = new inventory(64, ["item"], true) */
 ```
