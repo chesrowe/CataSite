@@ -18,27 +18,30 @@ Inventories hold items, have only certain permitted items allowed in them, and c
 |`isStorage?` |bool |Whether or not the inventory should hold the maxStorageQuantity or the maxCarryQuantity of an item |
 
 **Methods**
+### `.permittedItemTypesRemove(itemConstructorName)` → `undefined`
+Removes an item type
 
-### `.permittedItemTypesRemove(itemConstructorName)` → *real*
+| Parameter | Datatype  | Purpose |
+|-----------|-----------|---------|
 |`itemconstructorName` |string |The string name of the item's constructor |
 
-### `.resize(size)` → *bool*
+### `.resize(size)` → `undefined`
 Changes the number of item slots an inventory has
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
 |`size` |real |The new number of item slots |
 
-### `.getSize()` → *bool*
+### `.getSize()` → *real*
 Returns how many slots an inventory has
 
-### `.isFull()` → *real*
+### `.isFull()` → *bool*
 Returns whether the inventory is full or not
 
-### `.isEmpty()` → *real*
+### `.isEmpty()` → *bool*
 Checks to see if there are any items at all in the inventory
 
-## `percentOfSlotsEmpty()` → *Bool*
+### `.percentOfSlotsEmpty()` → *real*
 Returns the percentage of the inventory that is empty
 
 ### `.getEmptySlotNumber()` → *real*
@@ -48,7 +51,7 @@ Returns the number of empty item slots in a given inventory
 |-----------|-----------|---------|
 |`inventory` |struct.inventory |The inventory of which the empty slots will be counted |
 
-### `.itemCanBeHeld(itemType, [quantity])` → *bool*
+### `.itemCanBeHeld(itemType, [quantity])` → *Bool*
 Checks to see if an item of a certain quantity can be held in the inventory
 
 | Parameter | Datatype  | Purpose |
@@ -58,7 +61,7 @@ Checks to see if an item of a certain quantity can be held in the inventory
 
 **Returns:** Returns Whether or not the given intentory can hold ALL of the given items
 
-### `.itemAdd(itemType, [quantity])` → *bool*
+### `.itemAdd(itemType, [quantity])` → *real*
 Adds a new item of the given type and quantity to the inventory.
 This will take up as many item slots as needed to add the given quantity.
 If there is not enough space in the  inventory, only the amount possible will be added.
@@ -69,7 +72,7 @@ Returns the total amount that was actually added to the given inventory
 |`itemConstructorName` |string.item.constructorName |The type of item that you want to add to the given inventory |
 |`quantity` |real |The amount of the given item to add to the given inventory |
 
-### `.itemTransfer(itemType, destInv, [quantity])` → *array<struct>*
+### `.itemTransfer(itemType, destInv, [quantity])` → *bool*
 Transfers items of a given type from this inventory to another.
 Returns whether the function was able to transfer ANY items or not
 
@@ -81,7 +84,7 @@ Returns whether the function was able to transfer ANY items or not
 
 **Returns:** Returns whether the function was able to transfer ANY items or not
 
-### `.itemTransferSlot(slotIndex, destInv, [destSlotIndex], [quantity])` → *real*
+### `.itemTransferSlot(slotIndex, destInv, [destSlotIndex], [quantity])` → *bool*
 Moves a quantity of an item from this inventory at a specific slot to another inventory,
 equipping/unequipping and swapping as nessesary.
 
@@ -94,7 +97,7 @@ equipping/unequipping and swapping as nessesary.
 
 **Returns:** Returns whether or not the move could be completed or not.
 
-### `.itemTransferAll(destInv)` → *struct.item|-1*
+### `.itemTransferAll(destInv)` → *array<struct>*
 Transfers all the items in the inventory to another inventory.
 Returns an array of structs with properites: itemName, itemQuantity, and itemIconSprite
 
@@ -104,17 +107,17 @@ Returns an array of structs with properites: itemName, itemQuantity, and itemIco
 
 **Returns:** Returns an array of structs with properites: `itemName`, `itemQuantity`, and `itemIconSprite`
 
-### `.itemGetAmount(itemType)` → `undefined`
+### `.itemGetAmount(itemType)` → *real*
 Returns the amount of a given item type within the inventory
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
 |`itemType` |string.item.constructorName |The type of item that you want to get the amount of |
 
-### `.itemGet(itemType)` → `undefined`
+### `.itemGet(itemType)` → *struct.item|-1*
 Returns the item struct of the first item found for the given type or -1
 
-### `.itemRemove(itemType, [quantity])` → *bool*
+### `.itemRemove(itemType, [quantity])` → `undefined`
 Removes items of a given type and quantity from the inventory.
 Cool thing about this function is that the type of item can be scoped as widely or as narrowly as you want.
 For example: .itemRemove("itemResourceWoodcutting", 100, inv) would remove any items of the woodcutting type.
@@ -124,7 +127,7 @@ For example: .itemRemove("itemResourceWoodcutting", 100, inv) would remove any i
 |`itemType` |string.item.constructorName |The itemtype you want to remove from the inventory |
 |`quantity` |real |The amount of the given itemType that you want to remove |
 
-### `.itemCraft(itemType, [outputInv])` → *bool*
+### `.itemCraft(itemType, [outputInv])` → `undefined`
 Crafts a given item using ingredients from the inventory
 Optionally puts the resulting item into another inventory
 
@@ -133,14 +136,14 @@ Optionally puts the resulting item into another inventory
 |`itemType` |string.item.itemConstructor |The type of item to craft |
 |`outputInventory` |struct.inventory |Optional: The inventory where the crafted item will be placed |
 
-### `.anyItemsInThisInventoryArePresentInAnother(otherInventory)` → {rv}
+### `.anyItemsInThisInventoryArePresentInAnother(otherInventory)` → *bool*
 Checks to see if any items within this inventory are also present in other
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
 |`otherInventory` |struct.inventory |The other inventory to check for items |
 
-## `itemCanBeCrafted(itemType, inputInventory, outputInventory)` → {rv}
+### `.itemCanBeCrafted(itemType, inputInventory, outputInventory)` → *bool*
 Checks to see if a given item can be crafted.
 The conditions that have to be mets are:
 - All the items needed to craft the given item are present in the input inventory

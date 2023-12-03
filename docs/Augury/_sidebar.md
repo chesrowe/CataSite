@@ -2,6 +2,13 @@
 
 ---
 
+**Units**
+
+-    [Unit-Array](Unit-Array)
+-    [Unit-Names](Unit-Names)
+
+---
+
 **Items**
 
 -    [itemStack-Class](itemStack-Class)
@@ -11,10 +18,9 @@
 
 ---
 
-**Units**
+**NPC**
 
--    [Unit-Array](Unit-Array)
--    [Unit-Names](Unit-Names)
+-    [Fear-System](Fear-System)
 
 ---
 

@@ -4,7 +4,6 @@
 |`maxItemAmount` |real |The amount of items that the droptable contains, after all the items have been dropped, EMPTY_STRUCT will be returned |
 
 **Methods**
-
 ### `.getItemAmountLeft()` → *real*
 Returns the number of remaining items in the drop table
 
