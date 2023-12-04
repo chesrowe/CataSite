@@ -1,6 +1,12 @@
 # Fear-System
-1v1.1
+v1.1
 - 10-3-22: Changed to use DS grids
+
+This system controls an NPC's reaction to other NPCs and objects
+Each NPC has a fear level(an integer), once that fear level passing a certain threshold, the NPC starts to flee.
+An NPC's fear level will primarily increase from other, hostile NPCs being near them
+
+> This system may need to be refactored/reworked in the future
 
 ## `npc_fear_system_init()` → `undefined`
 inits all variables and data strucs used for the npc fear system
@@ -21,14 +27,14 @@ returns how much this NPC fears the given object or -1 if the object_index isn't
 |-----------|-----------|---------|
 |`objectIndex` |id.instance |The object you want to check for |
 
-## `npc_fear_process_main(instance)` → `undefined`
+## `npc_fear_process_main(instance)` → {rv}
 the main loop of the NPC fear system, runs in the npcMasterParent
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
 |`instance` |id.instance |the instance the main loop with be ran in |
 
-## `npc_fear_remove_object(objectIndex)` → `undefined`
+## `npc_fear_remove_object(objectIndex)` → {rv}
 removes a given fear amount from the given object if it exists within the grid
 
 | Parameter | Datatype  | Purpose |
