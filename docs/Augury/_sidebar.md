@@ -21,7 +21,6 @@
 **NPC**
 
 -    [Fear-System](Fear-System)
--    [Fear-System](Fear-System)
 
 ---
 
