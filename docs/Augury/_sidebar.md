@@ -32,18 +32,13 @@
 
 -    [File-System](File-System)
 -    [Misc-serialization-functions](Misc-serialization-functions)
+-    [Binary-Files](Binary-Files)
 
 ---
 
 **NPC**
 
 -    [Fear-System](Fear-System)
-
----
-
-**File**
-
--    [Binary-Files](Binary-Files)
 
 ---
 
