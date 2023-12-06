@@ -28,10 +28,7 @@ Writes a real value as bytes of data.
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
 |`file` |id.binaryFile |The file to write the data to |
-<<<<<<< Updated upstream:Augury-Docs/Augury/Binary-Files.md
-=======
 |`data` |real |The real to break down to binary data. |
->>>>>>> Stashed changes:docs/Augury/Binary-Files.md
 
 ## `file_bin_write_string(file, data);` → {rv}
 Breaks a string down to individual bytes then writes them to a binary file.
