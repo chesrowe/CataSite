@@ -18,29 +18,27 @@
 
 ---
 
-**NPC**
-
--    [Fear-System](Fear-System)
-
----
-
 **Misc**
 
+-    [Markdown-functions](Markdown-functions)
 -    [keybind-system](keybind-system)
 -    [Array-Functions](Array-Functions)
 -    [Discord-Logging](Discord-Logging)
+-    [String-Functions](String-Functions)
 
 ---
 
-**File**
+**File-Handling**
 
+-    [File-System](File-System)
 -    [Misc-serialization-functions](Misc-serialization-functions)
 -    [Binary-Files](Binary-Files)
 
 ---
 
--    [Markdown-functions](Markdown-functions)
--    [File-System](File-System)
+**NPC**
+
+-    [Fear-System](Fear-System)
 
 ---
 
