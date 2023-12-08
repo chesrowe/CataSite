@@ -29,7 +29,7 @@ Finds the number of dimensions an array has
 |-----------|-----------|---------|
 |`array` |array |You know what an array is |
 
-## `array_sort_1d(valToSortOut,array)` → *array*
+## `array_sort_1d(valToSortOut,array)` → `undefined`
 Sorts a given value out of an array leaving no gaps
 
 | Parameter | Datatype  | Purpose |
@@ -37,7 +37,7 @@ Sorts a given value out of an array leaving no gaps
 |`valToSortOut` |any |All of these values will be moved to the end of the array |
 |`array` |array |The array to "sort" |
 
-## `array_create_2d(d1Size, d2Size, initValue)` → {rv}
+## `array_create_2d(d1Size, d2Size, initValue)` → *array*
 Creates a 2D array with the given height and width, each index is given a value
 
 | Parameter | Datatype  | Purpose |
@@ -46,7 +46,7 @@ Creates a 2D array with the given height and width, each index is given a value
 |`d2Size` |real |Size of second dimension |
 |`initValue` |any |The value that will be put in every index |
 
-## `forEachExt(array, function)` → {rv}
+## `forEachExt(array, function)` → `undefined`
 Iterates over an array, executing a given function, whose arguments are the array and the index
 
 | Parameter | Datatype  | Purpose |

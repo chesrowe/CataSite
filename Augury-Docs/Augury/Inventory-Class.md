@@ -114,7 +114,7 @@ Returns the amount of a given item type within the inventory
 |-----------|-----------|---------|
 |`itemType` |string.item.constructorName |The type of item that you want to get the amount of |
 
-### `.itemGet(itemType)` → *struct.item|-1*
+### `.itemGet(itemType)` → *struct.item <span style="color: red;"> *or* </span> -1*
 Returns the item struct of the first item found for the given type or -1
 
 ### `.itemRemove(itemType, [quantity])` → `undefined`

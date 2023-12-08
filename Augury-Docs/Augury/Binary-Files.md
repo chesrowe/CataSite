@@ -15,14 +15,14 @@ Reads a string from a binary file.
 |-----------|-----------|---------|
 |`File` |Id.BinaryFile |The file to read the data from |
 
-## `file_bin_read_type(file);` → {rv}
+## `file_bin_read_type(file);` → *real*
 Not sure what this is for, but it was here, so let's document it, literally just calls `file_bin_read_btye`
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
 |`file` |id.binaryFile |The file to write the data to |
 
-## `file_bin_write_real(file, data);` → {rv}
+## `file_bin_write_real(file, data);` → `undefined`
 Writes a real value as bytes of data.
 
 | Parameter | Datatype  | Purpose |
@@ -30,7 +30,7 @@ Writes a real value as bytes of data.
 |`file` |id.binaryFile |The file to write the data to |
 |`data` |real |The real to break down to binary data. |
 
-## `file_bin_write_string(file, data);` → {rv}
+## `file_bin_write_string(file, data);` → `undefined`
 Breaks a string down to individual bytes then writes them to a binary file.
 
 | Parameter | Datatype  | Purpose |

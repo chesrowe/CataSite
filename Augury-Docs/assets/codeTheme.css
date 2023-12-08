@@ -1,7 +1,7 @@
 :root {
 	/* Based off of https://base2t.one/demo/sea/ */
 	--code-font-family: 'Roboto Mono', monospace;
-	--code-theme-background: #1d262f;
+	--code-theme-background: #15222f;
 	--code-theme-comment: #738191;
 	--code-theme-function: var(--theme-color);
 	--code-theme-keyword: #7eb6f6;

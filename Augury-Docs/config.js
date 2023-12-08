@@ -25,5 +25,5 @@ const config = {
 	latestVersion: 'Augury',
 	otherVersions: [],
 	favicon: 'assets/docsIcon.png',
-	themeColor: '#ffe699',
+	themeColor: '#dc8624',
 };
