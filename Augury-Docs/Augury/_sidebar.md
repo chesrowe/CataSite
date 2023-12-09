@@ -6,6 +6,7 @@
 
 -    [Unit Array](Unit-Array)
 -    [Unit Names](Unit-Names)
+-    [Misc unit functions](Misc-unit-functions)
 
 ---
 
@@ -25,6 +26,8 @@
 -    [Array Functions](Array-Functions)
 -    [Discord Logging](Discord-Logging)
 -    [String Functions](String-Functions)
+-    [Delta time/gamespeed functions](Delta-time/gamespeed-functions)
+-    [Struct functions](Struct-functions)
 
 ---
 
