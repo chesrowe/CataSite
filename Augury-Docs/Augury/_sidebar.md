@@ -48,22 +48,9 @@
 
 **Libraries we use**
 
--    [Scribble](Scribble)
-
----
-
-**Libraries we use**
-
--    [Scribble](Scribble)
--    [Dynamo](Dynamo)
-
----
-
-**Libraries we use**
-
--    [Scribble](Scribble)
--    [Dynamo](Dynamo)
--    [SNAP](SNAP)
+-    [Scribble](https://www.jujuadams.com/Scribble/#/latest/)
+-    [Dynamo](https://www.jujuadams.com/Dynamo/#/latest/)
+-    [SNAP](https://www.jujuadams.com/SNAP/#/latest/)
 
 ---
 
