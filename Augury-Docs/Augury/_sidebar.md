@@ -46,9 +46,13 @@
 
 ---
 
-**Idk**
+**Libraries we use**
 
--    [Test Note](Test-Note)
+-    [Scribble](https://www.jujuadams.com/Scribble/)
+-    [Dynamo](https://www.jujuadams.com/Dynamo/)
+-    [SNAP](https://www.jujuadams.com/SNAP/)
+-    [SimThreads](https://github.com/tabularelf/SimThreads)
+-    [Collage](https://tabularelf.com/docs/collage)
 
 ---
 
