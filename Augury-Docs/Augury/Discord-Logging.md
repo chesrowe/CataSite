@@ -1,7 +1,9 @@
 # Discord Logging
 Functions related to logging info to Discord channels
 
-the `DISCORD_CHANNELS` enum contains the channels errorLog, warningLog, and debug console
+
+ the `DISCORD_CHANNELS` enum contains the channels errorLog, warningLog, and debug console
+
 
 ## `discord_log_warning(_warningMessage)` → `undefined`
 logs a warning message to the #augury-warning-log channel
