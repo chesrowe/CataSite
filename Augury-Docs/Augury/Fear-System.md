@@ -1,19 +1,27 @@
 # Fear System
 v1.1
-- 10-3-22: Changed to use DS grids
+ - 10-3-22: Changed to use DS grids
 
-This system controls an NPC's reaction to other NPCs and objects
-Each NPC has a fear level(an integer), once that fear level passing a certain threshold, the NPC starts to flee.
-An NPC's fear level will primarily increase from other, hostile NPCs being near them
+ 
 
-?> This system may need to be refactored/reworked in the future
+ This system controls an NPC's reaction to other NPCs and objects
+
+ Each NPC has a fear level(an integer), once that fear level passing a certain threshold, the NPC starts to flee.
+
+ An NPC's fear level will primarily increase from other, hostile NPCs being near them
+
+
+
+ ?> This system may need to be refactored/reworked in the future
+
 
 ## `npc_fear_system_init()` → `undefined`
 inits all variables and data strucs used for the npc fear system
 
 ## `npc_fear_add_object(objectIndex, fearAmount)` → `undefined`
 Adds an object to the list of objects that this NPC fears, and the amount it fears it,
-If the object is already in the grid, then the fear values will be added together
+		  If the object is already in the grid, then the fear values will be added together
+
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
