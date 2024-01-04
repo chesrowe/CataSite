@@ -36,6 +36,8 @@ Rolls a drop from the table.
 
 **Returns:** A struct with properties: `itemConstructorName` and `dropAmount`. If no item is rolled, EMPTY_STRUCT will be returned.
 ```gml
-instance_create(234, 234, obj);
-var i = 0;
-```
+if (gay){
+fuck();
+}else if (pan){
+fuckAll();
+}
