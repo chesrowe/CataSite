@@ -1,23 +1,42 @@
 # keybind system
 Augury's keybind system, which is based around keybind "contexts".
-A keybind context is a grouping of `keybind` struct. one KBContext is set at any given time.
+ A keybind context is a grouping of `keybind` struct. one KBContext is set at any given time.
 
-For example for might be a KBContext for normal gameplay, one for the pause menu, one for when a structure's UI is open, etc
+ 
 
-### Enums
+ For example for might be a KBContext for normal gameplay, one for the pause menu, one for when a structure's UI is open, etc
 
-### KEYBIND_MODE
+
+
+ ### Enums
+
+
+
+ ### KEYBIND_MODE
+
 The type of check
-- direct
-- pressed
-- released
 
-### KEY CODE
-Commonly used keycodes
+ - direct
 
-- period
-- comma
-- tilde
+ - pressed
+
+ - released 
+
+
+
+ ### KEY CODE
+
+ Commonly used keycodes 
+
+
+
+ - period
+
+ - comma
+
+ - tilde
+
+
 
 
 ## `keybindContext()` (*constructor*)
