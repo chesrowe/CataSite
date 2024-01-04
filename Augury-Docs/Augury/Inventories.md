@@ -1,12 +1,19 @@
 # Inventories
 Inventories are data objects used for all instances where we need to store items together
-(Structure storage, pack oxen, unit inventories, and etc..)
+ (Structure storage, pack oxen, unit inventories, and etc..)
 
-**Examples:**
-```gml
-toolInv = new inventory(4, ["itemTool"], false)
-storage = new inventory(64, ["item"], true) */
-```
+
+
+ **Examples:**
+
+ ```gml
+
+ toolInv = new inventory(4, ["itemTool"], false)
+
+ storage = new inventory(64, ["item"], true) */
+
+ ```
+
 
 ## `inventory(size, permittedItemTypes, isStorage?)` (*constructor*)
 Inventories hold items, have only certain permitted items allowed in them, and can be a storage or "carried"
@@ -20,7 +27,8 @@ Inventories hold items, have only certain permitted items allowed in them, and c
 **Methods**
 ### `.itemTransferAll(destInv)` → *array<struct>*
 Transfers all the items in the inventory to another inventory.
-Returns an array of structs with properites: itemName, itemQuantity, and itemIconSprite
+       Returns an array of structs with properites: itemName, itemQuantity, and itemIconSprite
+
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
