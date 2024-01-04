@@ -10,11 +10,8 @@ Drop tables are meant to have a "primary" drops (like stone dropping.... stone) 
 
 ```gml
  monsterDropTable = new dropTable(10); //Create a new drop table with 10 total items on it
-
  monsterDropTable.dropAdd("itemResourceCreatureHide", 5, 1); //Add an hide drop to the droptable with a 1 in 5 chance of dropping, with 1 dropping each time it is rolled.
-
  var _drop = monsterDropTable.dropRoll(); // Rolls a drop and stores it in `_drop` 
-
 ```
 
 ## `dropTable(maxItemAmount)` (*constructor*)
@@ -24,12 +21,7 @@ Drop tables are meant to have a "primary" drops (like stone dropping.... stone) 
 |`maxItemAmount` |real |The amount of items that the droptable contains, after all the items have been dropped, EMPTY_STRUCT will be returned |
 ```gml
  if (gay){
-
      fuck();
-
  }else if (pan){
-
      fuckAll();
-
  }
-
