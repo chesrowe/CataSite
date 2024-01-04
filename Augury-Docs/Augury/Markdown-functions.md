@@ -2,6 +2,7 @@
 Functions related to generating markdown text
 
 ## `array_to_markdown(array, [quotes], [outputFunction])` → *string*
+Converts an array into a Markdown list
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
