@@ -2,8 +2,7 @@
 
 ## `itemStack(itemType, [quantity])` (*constructor*)
 Generic ItemStack class.
-       A stack of items has a pointer to the given item's global struct and a quantity of said item
-
+A stack of items has a pointer to the given item's global struct and a quantity of said item
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
