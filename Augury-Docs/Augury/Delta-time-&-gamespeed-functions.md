@@ -1,7 +1,6 @@
 # Delta time & gamespeed functions
 Functions related to Delta time and gamespeed.
- Delta time works as a multiplier so the target should be 1 for normal speed.
-
+Delta time works as a multiplier so the target should be 1 for normal speed.
 
 ## `adjust_full(value)` → *real*
 returns Multiplies a value by both the Delta time and gamespeed multipliers
