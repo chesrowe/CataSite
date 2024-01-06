@@ -12,10 +12,8 @@ Finds the first index of a 1D array containing an inputed value and replaces in 
 
 ## `array_remove(array, removeVal, emptyVal, [sort?])` → `undefined`
 Finds inputed value in the array and replaces it with an empty value, then "sorts" the array.
-		  Sort means moving all the "empty" values to the end of the array so the non-empty values are all at the front  
-
-       Returns whether or not the removeVal was found
-
+Sort means moving all the "empty" values to the end of the array so the non-empty values are all at the front
+Returns whether or not the removeVal was found
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
