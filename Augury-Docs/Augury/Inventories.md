@@ -1,19 +1,12 @@
 # Inventories
 Inventories are data objects used for all instances where we need to store items together
- (Structure storage, pack oxen, unit inventories, and etc..)
+(Structure storage, pack oxen, unit inventories, and etc..)
 
-
-
- **Examples:**
-
- ```gml
-
- toolInv = new inventory(4, ["itemTool"], false)
-
- storage = new inventory(64, ["item"], true) */
-
- ```
-
+**Examples:**
+```gml
+toolInv = new inventory(4, ["itemTool"], false)
+storage = new inventory(64, ["item"], true) */
+```
 
 ## `inventory(size, permittedItemTypes, isStorage?)` (*constructor*)
 Inventories hold items, have only certain permitted items allowed in them, and can be a storage or "carried"
@@ -70,12 +63,9 @@ Checks to see if an item of a certain quantity can be held in the inventory
 
 ### `.itemAdd(itemType, [quantity])` → *real*
 Adds a new item of the given type and quantity to the inventory.
-	       This will take up as many item slots as needed to add the given quantity.
-
-			  If there is not enough space in the  inventory, only the amount possible will be added.
-
-	       Returns the total amount that was actually added to the given inventory
-
+This will take up as many item slots as needed to add the given quantity.
+If there is not enough space in the  inventory, only the amount possible will be added.
+Returns the total amount that was actually added to the given inventory
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
@@ -84,8 +74,7 @@ Adds a new item of the given type and quantity to the inventory.
 
 ### `.itemTransfer(itemType, destInv, [quantity])` → *bool*
 Transfers items of a given type from this inventory to another.
-	       Returns whether the function was able to transfer ANY items or not
-
+Returns whether the function was able to transfer ANY items or not
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
@@ -97,8 +86,7 @@ Transfers items of a given type from this inventory to another.
 
 ### `.itemTransferSlot(slotIndex, destInv, [destSlotIndex], [quantity])` → *bool*
 Moves a quantity of an item from this inventory at a specific slot to another inventory,
-	       equipping/unequipping and swapping as nessesary. 
-
+equipping/unequipping and swapping as nessesary.
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
@@ -111,8 +99,7 @@ Moves a quantity of an item from this inventory at a specific slot to another in
 
 ### `.itemTransferAll(destInv)` → *array<struct>*
 Transfers all the items in the inventory to another inventory.
-	       Returns an array of structs with properites: itemName, itemQuantity, and itemIconSprite
-
+Returns an array of structs with properites: itemName, itemQuantity, and itemIconSprite
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
@@ -132,10 +119,8 @@ Returns the item struct of the first item found for the given type or -1
 
 ### `.itemRemove(itemType, [quantity])` → `undefined`
 Removes items of a given type and quantity from the inventory.
-	       Cool thing about this function is that the type of item can be scoped as widely or as narrowly as you want.
-
-	       For example: .itemRemove("itemResourceWoodcutting", 100, inv) would remove any items of the woodcutting type.
-
+Cool thing about this function is that the type of item can be scoped as widely or as narrowly as you want.
+For example: .itemRemove("itemResourceWoodcutting", 100, inv) would remove any items of the woodcutting type.
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
@@ -144,8 +129,7 @@ Removes items of a given type and quantity from the inventory.
 
 ### `.itemCraft(itemType, [outputInv])` → `undefined`
 Crafts a given item using ingredients from the inventory
-	       Optionally puts the resulting item into another inventory
-
+Optionally puts the resulting item into another inventory
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
@@ -161,12 +145,9 @@ Checks to see if any items within this inventory are also present in other
 
 ### `.itemCanBeCrafted(itemType, inputInventory, outputInventory)` → *bool*
 Checks to see if a given item can be crafted.
-		       The conditions that have to be mets are:  
-
-		       - All the items needed to craft the given item are present in the input inventory
-
-				  - The output inventory actually has enough space to hold the crafted item(s) 
-
+The conditions that have to be mets are:
+- All the items needed to craft the given item are present in the input inventory
+- The output inventory actually has enough space to hold the crafted item(s)
 
 | Parameter | Datatype  | Purpose |
 |-----------|-----------|---------|
